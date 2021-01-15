@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!-- Title -->
+    <title>Rejected Notes</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+   
+    <!-- Navbar -->
+    <section class="nav-bar">   
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="dashboard.html">
+                <img src="../img/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Notes</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="notes-under-review.html">Notes Under Review</a>
+                            <a class="dropdown-item" href="published-notes.html">Published Notes</a>
+                            <a class="dropdown-item" href="downloaded-notes.html">Downloaded Notes</a>
+                            <a class="dropdown-item" href="rejected-notes.html">Rejected Notes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="member-details.html">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spam-reports.html">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link navbar-user-photo" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../img/reviewer-1.png"></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="user-profile.html">User Profile</a>
+                            <a class="dropdown-item" href="change-password.html">Change Password</a>
+                            <a class="dropdown-item" href="login.html" id="logout"><b>LOGOUT</b></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><button type="button" class="btn btn-primary btn-login">Logout</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Table -->
+    <section class="dashboard-table" id="rejected-notes">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="heading">Rejected Notes</div>
+                <div class="col-md-8 col-sm-12 search-rejected">
+                    <label for="seller1">Seller</label>
+                    <select id="seller1" class="form-control">
+                        <option selected>Khyati</option>
+                        <option>Raj</option>
+                        <option>Dev</option>
+                    </select>
+                </div>
+                <div class="col-md-4 col-sm-12" id="search">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-9 searchbar">
+                            <div class="search-box text-left">
+                                <img src="../img/search-icon.png">
+                                <input type="text" class="search-input" placeholder="Search">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-3 search-button">
+                            <button type="button" class="btn btn-primary search-btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row booktable">
+                <table class="table table-hover table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 7%">Sr no.</th>
+                            <th scope="col" style="width: 13%">Note Title</th>
+                            <th scope="col" style="width: 10%">Category</th>
+                            <th scope="col" style="width: 11%">Seller</th>
+                            <th scope="col" style="width: 6%"></th>
+                            <th scope="col" style="width: 15%">Date Added</th>
+                            <th scope="col" style="width: 11%">Rejected by</th>
+                            <th scope="col" style="width: 28%">Remark</th>
+                            <th scope="col" style="width: 4%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td id="magenta-text">Data Science</td>
+                            <td>Science</td>
+                            <td>Khyati Patel</td>
+                            <td><a href="#"><img src="../img/eye.png"></a></td>
+                            <td>27-11-2020, 11:12</td>
+                            <td>Raj Sheth</td>
+                            <td>Lorem ipsum is simply dummy text.</td>
+                            <td><a href="#"><img src="../img/dots.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="magenta-text">Computer Basic</td>
+                            <td>Computer</td>
+                            <td>Khyati Patel</td>
+                            <td><a href="#"><img src="../img/eye.png"></a></td>
+                            <td>27-11-2020, 11:12</td>
+                            <td>Raj Sheth</td>
+                            <td>Lorem ipsum is simply dummy text.</td>
+                            <td><a href="#"><img src="../img/dots.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="magenta-text">Human Body</td>
+                            <td>Science</td>
+                            <td>Khyati Patel</td>
+                            <td><a href="#"><img src="../img/eye.png"></a></td>
+                            <td>27-11-2020, 11:12</td>
+                            <td>Raj Sheth</td>
+                            <td>Lorem ipsum is simply dummy text.</td>
+                            <td><a href="#"><img src="../img/dots.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td id="magenta-text">World War 2</td>
+                            <td>History</td>
+                            <td>Khyati Patel</td>
+                            <td><a href="#"><img src="../img/eye.png"></a></td>
+                            <td>27-11-2020, 11:12</td>
+                            <td>Raj Sheth</td>
+                            <td>Lorem ipsum is simply dummy text.</td>
+                            <td><a href="#"><img src="../img/dots.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td id="magenta-text">Accounting</td>
+                            <td>Account</td>
+                            <td>Khyati Patel</td>
+                            <td><a href="#"><img src="../img/eye.png"></a></td>
+                            <td>27-11-2020, 11:12</td>
+                            <td>Raj Sheth</td>
+                            <td>Lorem ipsum is simply dummy text.</td>
+                            <td><a href="#"><img src="../img/dots.png"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <div class="row justify-content-center">
+        <div class="pagination">
+            <a href="#"><img src="../img/left-arrow.png"></a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#"><img src="../img/right-arrow.png"></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <hr>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 footer-content">
+                    <p>Version : 1.1.24</p>
+                </div>
+                <div class="col-md-6 col-sm-6 text-right">
+                    <p>Copyright © <a href="https://www.tatvasoft.com/">TatvaSoft</a> All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="../js/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

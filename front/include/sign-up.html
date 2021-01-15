@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!-- Title -->
+    <title>Sign Up</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/home/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sign-up.css">
+
+
+</head>
+
+<body>
+
+    <section id="sign-up" class="bg">
+        <div class="container">
+            <div class="row justify-content-center" id="logo">
+                <img src="../img/pre-login/top-logo.png" alt="Logo">
+            </div>
+            <div class="row justify-content-center">
+                <form class="sign-up-form">
+                    <div class="heading">
+                        <h3>Creat an Account</h3>
+                        <p>Enter your your details to signup</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="first-name1" class="label-text">First Name</label>
+                        <input type="text" class="form-control input-field" id="first-name1" placeholder="Enter your first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name1" class="label-text">Last Name</label>
+                        <input type="text" class="form-control input-field" id="last-name1" placeholder="Enter your last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email1" class="label-text">Email</label>
+                        <input type="email" class="form-control input-field" id="email1" aria-describedby="emailHelp" placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="password1" class="label-text">Password</label>
+                        <input type="password" class="form-control input-field" id="password1" placeholder="Enter your password">
+                        <span toggle="#password1" class="field-icon toggle-password"><img src="../img/pre-login/eye.png" id="eye-img"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password1" class="label-text">Confirm Password</label>
+                        <input type="password" class="form-control input-field" id="confirm-password1" placeholder="Re-enter your password">
+                        <span toggle="#confirm-password1" class="field-icon toggle-password"><img src="../img/pre-login/eye.png" id="eye-img"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block login-button" id="form-login-button">SIGN UP</button>
+                    <div id="bottom">
+                        <p>Already have an account? <a href="login.html">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>       
+    </section>
+    
+
+    <!-- JQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="../js/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

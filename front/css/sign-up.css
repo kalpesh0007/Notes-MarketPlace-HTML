@@ -1,0 +1,228 @@
+body, html {
+    height: 100%;
+}
+
+/* =============== Background img ============= */
+.bg {
+    background: url(../img/pre-login/banner-with-overlay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    width: 100%
+}
+
+/* =============== Login Page ============= */
+
+#sign-up {
+    padding-top: 2px;
+}
+
+/* Logo */
+
+#logo {
+    margin: 40px 0 12px 0;
+}
+
+img {
+    height: 34px;
+}
+
+/* form details */
+
+.sign-up-form {
+    background-color: white;
+    width: 430px;
+    height: 580px;
+    padding: 25px 35px;
+    border: solid white 1px;
+    border-radius: 8px;
+}
+
+.heading h3 {
+    font-family: Open Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #6255a5;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.heading p {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    max-width: 100%;
+    color: #333333;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.label-text {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    border: 1px solid #6255a5;
+    width: 360px;
+    height: 38px;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000;
+}
+
+.login-button {
+    background-color: #6255a5;
+    border: 1px solid #6255a5;
+    border-radius: 3px;
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.login-button:hover {
+    background-color: #6255a5;
+    border: 1px solid #6255a5;
+}
+
+#eye-img {
+    height: 30px;
+    padding-bottom: 14px;
+}
+
+.field-icon {
+    float: right;
+    font-size: 22px;
+    margin-right: 8px;
+    margin-top: -48px;
+    color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+  
+#bottom p {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #333333;
+    text-align: center;
+    margin: 0;
+
+}
+
+#bottom a {
+    color: #6255a5;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    #sign-up {
+        padding-top: 10px;
+    }
+    #logo {
+        margin-bottom: 8px;
+    }  
+    img {
+        height: 32px;
+    }
+    .login-button {
+        width: 330px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .input-field {
+        width: 330px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .sign-up-form {
+        width: 400px;
+        height: 545px;
+    }
+    .field-icon {
+        font-size: 20px;
+        margin-right: 5px;
+        margin-top: -42px;
+    }
+    .bg {
+        height: 120%;
+    }
+
+}
+
+
+@media only screen and (max-width: 420px) {
+
+    #sign-up {
+        padding-top: 10px;
+    }
+    #logo {
+        margin-bottom: 8px;
+    }    
+    img {
+        height: 30px;
+    }
+    .login-button {
+        width: 230px;
+        height: 30px;
+    }
+    .input-field {
+        width: 230px;
+        height: 30px;
+        font-size: 13px;
+    }
+    .sign-up-form {
+        width: 300px;
+        height: 570px;
+    }
+    .field-icon {
+        font-size: 20px;
+        margin-right: 3px;
+        margin-top: -42px;
+    }
+    .bg {
+        height: 120%;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    #sign-up {
+        padding-top: 10px;
+    }
+    #logo {
+        margin-bottom: 8px;
+    }
+    img {
+        height: 28px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    
+    #sign-up {
+        padding-top: 10px;
+    }
+}

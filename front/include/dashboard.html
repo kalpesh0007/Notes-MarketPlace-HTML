@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!-- Title -->
+    <title>Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/home/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    
+    <!-- Navbar -->
+    <section class="nav-bar">   
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="home.html">
+                <img src="../img/home/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">Search Notes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Sell Your Notes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Buyer Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link navbar-user-photo" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../img/note-details/reviewer-1.png"></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="user-profile.html">My Profile</a>
+                            <a class="dropdown-item" href="my-downloads.html">My Downloads</a>
+                            <a class="dropdown-item" href="my-sold-notes.html">My Sold Notes</a>
+                            <a class="dropdown-item" href="my-rejected-notes.html">My Rejected Notes</a>
+                            <a class="dropdown-item" href="change-password.html">Change Password</a>
+                            <a class="dropdown-item" href="login.html" id="logout"><b>Logout</b></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><button type="button" class="btn btn-primary btn-login">Logout</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Dashboard Top -->
+    <section class="dashboard-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 title">
+                    <h3>Dashboard</h3>
+                </div>
+                <div class="col-md-6 col-sm-6 add-btn">
+                    <a href="#" id="btnAdd" class="btn">ADD MORE</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 boxes">
+                            <div class="myearning">
+                                <div class="earning-img text-center">
+                                    <img src="../img/dashboard/earning-icon.svg"><br>
+                                    <span class="heading">My Earning</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 boxes">
+                            <div class="sold-box">
+                                <div class="sold">
+                                    <span class="heading">100</span><br>
+                                    <span class="sub-heading">Numbers of notes Sold</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 boxes">
+                            <div class="sold-box">
+                                <div class="earning">
+                                    <span class="heading">$10,00,000</span><br>
+                                    <span class="sub-heading">Money Earned</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 boxes">
+                            <div class="download-box">
+                                <span class="heading">38</span><br>
+                                <span class="sub-heading">My Downloads</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 boxes">
+                            <div class="reject-box">
+                                <span class="heading">12</span><br>
+                                <span class="sub-heading">My Rejected Notes</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 boxes">
+                            <div class="request-box">
+                                <span class="heading">102</span><br>
+                                <span class="sub-heading">Buyer Requests</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Table 1  -->
+    <section class="dashboard-table">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 heading">In Progress Notes</div>
+                <div class="col-md-4 col-sm-12 search">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-9 searchbar">
+                            <div class="search-box text-left">
+                                <img src="../img/dashboard/search-icon.svg">
+                                <input type="text" class="search-input" placeholder="Search">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-3 search-button">
+                            <button type="button" class="btn btn-primary search-btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row booktable">
+                <table class="table table-hover table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 10%">Added date</th>
+                            <th scope="col" style="width: 32%">title</th>
+                            <th scope="col" style="width: 18%">category</th>
+                            <th scope="col" style="width: 18%">status</th>
+                            <th scope="col" style="width: 14%">actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09-10-2020</td>
+                            <td>Data Science</td>
+                            <td>Science</td>
+                            <td>Draft</td>
+                            <td>
+                                <a href="#"><img src="../img/dashboard/edit.png"></a>
+                                <a href="#"><img src="../img/dashboard/delete.png"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10-10-2020</td>
+                            <td>Accounts</td>
+                            <td>Commerce</td>
+                            <td>In Review</td>
+                            <td><a href="#"><img src="../img/dashboard/eye.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>11-10-2020</td>
+                            <td>Social Studies</td>
+                            <td>Social</td>
+                            <td>Submitted</td>
+                            <td><a href="#"><img src="../img/dashboard/eye.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>12-10-2020</td>
+                            <td>AI</td>
+                            <td>IT</td>
+                            <td>Submitted</td>
+                            <td><a href="#"><img src="../img/dashboard/eye.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>13-10-2020</td>
+                            <td>Lorem ipsum dolor sit ametsectetur</td>
+                            <td>Lorem</td>
+                            <td>Draft</td>
+                            <td>
+                                <a href="#"><img src="../img/dashboard/edit.png"></a>
+                                <a href="#"><img src="../img/dashboard/delete.png"></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <div class="row justify-content-center">
+        <div class="pagination">
+            <a href="#"><img src="../img/search/left-arrow.png"></a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#"><img src="img/search/right-arrow.png"></a>
+        </div>
+    </div>
+
+    <!-- Dashboard Table 2 -->
+    <section class="dashboard-table">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 heading">Published Notes</div>
+                <div class="col-md-4 search">
+                    <div class="row">
+                        <div class="col-md-8 searchbar">
+                            <div class="search-box text-left">
+                                <img src="../img/dashboard/search-icon.svg">
+                                <input type="text" class="search-input" placeholder="Search">
+                            </div>
+                        </div>
+                        <div class="col-md-4 search-button">
+                            <button type="button" class="btn btn-primary search-btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row booktable">
+                <table class="table table-hover table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 10%">Added date</th>
+                            <th scope="col" style="width: 30%">title</th>
+                            <th scope="col" style="width: 18%">category</th>
+                            <th scope="col" style="width: 10%">Sell Type</th>
+                            <th scope="col" style="width: 10%">Price</th>
+                            <th scope="col" style="width: 10%">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09-10-2020</td>
+                            <td>Data Science</td>
+                            <td>Science</td>
+                            <td>Paid</td>
+                            <td>$575</td>
+                            <td><a href="#"><img src="../img/dashboard/eye.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>10-10-2020</td>
+                            <td>Accounts</td>
+                            <td>Commerce</td>
+                            <td>Paid</td>
+                            <td>$0</td>
+                            <td><a href="#"><img src="../img/dashboard/eye.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>11-10-2020</td>
+                            <td>Social Studies</td>
+                            <td>Social</td>
+                            <td>Paid</td>
+                            <td>$0</td>
+                            <td><a href="#"><img src="../img/dashboard/eye.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>12-10-2020</td>
+                            <td>AI</td>
+                            <td>IT</td>
+                            <td>Paid</td>
+                            <td>$345</td>
+                            <td><a href="#"><img src="../img/dashboard/eye.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>13-10-2020</td>
+                            <td>Lorem ipsum dolor sit ametsectetur</td>
+                            <td>Lorem</td>
+                            <td>Paid</td>
+                            <td>$0</td>
+                            <td><a href="#"><img src="../img/dashboard/eye.png"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <div class="row justify-content-center">
+        <div class="pagination">
+            <a href="#"><img src="../img/search/left-arrow.png"></a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#"><img src="../img/search/right-arrow.png"></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <hr>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-content">
+                    <p>Copyright © <a href="https://www.tatvasoft.com/">TatvaSoft</a> All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 footer-social text-right">
+                    <ul class="social-list">
+                        <li><a href="#"><i><img src="../img/home/facebook.png"></i></a></li>
+                        <li><a href="#"><i><img src="../img/home/twitter.png"></i></a></li>
+                        <li><a href="#"><i><img src="../img/home/linkedin.png"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="../js/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+</body>
+
+</html>

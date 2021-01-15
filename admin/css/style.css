@@ -1,0 +1,914 @@
+
+
+html,
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    overflow: hidden;
+}
+
+
+
+
+/* ======================================================
+                    Navbar
+====================================================== */
+
+.nav-bar .navbar {
+    background: #fff !important;
+    -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 18px 110px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.nav-bar .navbar-light .navbar-nav .nav-link {
+    font-family: Open Sans;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 5px 0;
+    margin: 12px 12px 6px 12px;    
+}
+
+.nav-bar .navbar-light .navbar-nav .nav-link:hover,
+.nav-bar .navbar-light .navbar-nav .nav-link:focus,
+.nav-bar .navbar-light .navbar-nav .nav-link:active {
+    color: #6255a5;
+    border-bottom: 3px solid #6255a5;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.nav-bar .navbar-light .navbar-nav .nav-item img {
+    margin: -16px 0 0 0;
+}
+
+.nav-bar .navbar-light .navbar-collapse .navbar-nav .active a {
+    color: #6255a5;
+    border-bottom: 3px solid #6255a5;
+}
+
+.nav-bar .navbar .btn-login {
+    width: 90px;
+    height: 30px;
+    color: #fff;
+    background-color: #6255a5;
+    border: 1px solid #6255a5;
+    border-radius: 3px;
+    font-family: Open Sans;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0;
+    margin: -4px 0 0 0;
+}
+
+.nav-bar .navbar .btn-login:hover {
+    color: #6255a5;
+    border: 1px solid #6255a5;
+    background-color: #fff;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+}
+
+.nav-bar .navbar .nav-item .dropdown-menu .dropdown-item {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    padding-top: 10px;
+}
+
+.nav-bar .navbar .nav-item .dropdown-menu #logout {
+    color: #6255a5;
+}
+
+.nav-bar .navbar .nav-item .dropdown-menu #logout:hover {
+    color: #fff;
+}
+
+.nav-bar .navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    background: #6255a5;
+    color: #fff;
+}
+
+.nav-bar .user-profile-navbar .navbar .nav-item .dropdown-menu .dropdown-item span {
+    color: #6255a5;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-bar .navbar .nav-item .dropdown-menu .dropdown-item:hover span {
+    background: #6255a5;
+    color: #fff;
+}
+
+.nav-bar .navbar .nav-item .dropdown-menu .active {
+    background: #6255a5;
+    color: #fff;
+}
+
+
+
+
+
+/* ======================================================
+                Navbar drop-down
+====================================================== */
+
+.dropdown-menu .dropdown-item {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    padding-top: 10px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background: #6255a5;
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* ======================================================
+                    Dashboard
+====================================================== */
+
+.dashboard-top {
+    margin-top: 90px;
+}
+
+.dashboard-top .title {
+    padding: 0;
+}
+
+.dashboard-top .title h3 {
+    margin: 60px 0 0 0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #6255a5;
+    padding: 0 0 20px 0;
+}
+
+.dashboard-top .boxes .heading {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #6255a5;
+}
+
+.dashboard-top .boxes .sub-heading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+.dashboard-top #download-box {
+    text-align: center;
+    margin: 0;
+    height: 120px;
+    padding: 0;
+    padding-top: 18px;
+    border: 1px solid #d1d1d1;
+}
+
+.dashboard-top #reject-box {
+    text-align: center;
+    margin: 0;
+    height: 120px;
+    padding: 0;
+    padding-top: 18px;
+    border: 1px solid #d1d1d1;
+}
+
+.dashboard-top #request-box {
+    text-align: center;
+    margin: 0;
+    height: 120px;
+    padding: 0;
+    padding-top: 18px;
+    border: 1px solid #d1d1d1;
+}
+
+.dashboard-table .searchbar .search-box #publish-search {
+    width: 66%;
+}
+
+.dashboard-table #month1 {
+    padding: 0 16px 0 8px;
+}
+
+.dashboard-table .search [id="month1"] {
+    background: url("../img/arrow-down.png") 90% no-repeat #fff;
+    appearance: none;
+}
+
+.dashboard-table .booktable .table tbody td a #eye-img {
+    margin: 0 6px 0 14px;
+}
+
+.dashboard-table .booktable .table tbody td a #dots-img {
+    margin: 0 6px 0 26px;
+}
+
+
+
+
+
+
+/* ======================================================
+                    Table
+====================================================== */
+
+.dashboard-table {
+    margin-top: 50px;
+}
+
+.dashboard-table .search {
+    padding: 0 0 0 14px;
+}
+
+.dashboard-table .heading {
+    padding: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #6255a5;
+}
+
+.dashboard-table .searchbar {
+    height: 50px;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+}
+
+.dashboard-table .searchbar .search-box img {
+    padding: 0 10px 0 0;
+}
+
+.dashboard-table .searchbar .search-box input {
+    margin-top: 12px;
+    width: 75%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.dashboard-table .search-btn {
+    padding: 0;
+    background-color: #6255a5;
+    height: 50px;
+    width: 102px;
+    border: 1px solid #6255a5;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.dashboard-table .booktable {
+    margin-top: 17px;
+    border: 1px solid #d1d1d1;
+}
+
+.dashboard-table .booktable .table tr {
+    height: 60px;
+}
+
+.dashboard-table .booktable .table tr:hover {
+    background: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-table .booktable .table thead:hover tr {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.dashboard-table .booktable .table thead {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.dashboard-table .booktable .table tbody td {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+.dashboard-table .booktable .table tbody td a img {
+    margin: 0 5px;
+}
+
+.table thead th {
+    vertical-align: middle;
+}
+
+.table tbody tr td {
+    vertical-align: middle;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table #magenta-text {
+    color: #6255a5 !important;
+}
+
+
+
+
+
+
+/* ======================================================
+                    Footer
+====================================================== */
+
+.footer p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.footer a {
+    color: #6255a5;
+}
+
+
+
+
+
+
+/* ======================================================
+                    My Profile
+====================================================== */
+
+.profile {
+    margin-top: 150px;
+}
+
+.profile .form-group {
+    margin-bottom: 30px !important;
+}
+
+.profile .title {
+    margin-bottom: 40px;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+}
+
+.profile .input-group-prepend {
+    margin-right: 10px;
+}
+
+[id="dropdownCountry"],
+[id="dropdownGender"] {
+    background: url("../img/arrow-down.png") 98% no-repeat;
+    appearance: none;
+}
+
+[id="customDropDown"] {
+    padding-right: 60px !important;
+    background: url("../img/arrow-down.png") 85% no-repeat;
+    appearance: none;
+}
+
+label {
+    margin-bottom: 10px !important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+.form-control {
+    height: 50px;
+}
+
+.profile .uploader {
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.profile .uploader label {
+    float: left;
+    clear: both;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 7px;
+    border: 3px solid #eee;
+}
+
+::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #8a8a8a;
+}
+
+.profile textarea {
+    border: 1px solid #d1d1d1;
+    height: 238px !important;
+    border-radius: 3px;
+}
+
+#btnSubmit {
+    padding: 13px 10px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: #6255a5;
+    width: 150px;
+    height: 50px;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+[id="example-date"],
+[type="date"] {
+    background: #fff url("../img/calendar.png") 97% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+
+
+
+
+
+/* ======================================================
+                    Manage Administrator
+====================================================== */
+
+#manage-admin {
+    margin-top: 140px;
+}
+
+.dashboard-table #heading {
+    padding: 0;
+    margin: 0 0 18px 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #6255a5;
+}
+
+.dashboard-table .add-button {
+    padding: 0;
+}
+
+.dashboard-table .add-admin-btn {
+    padding: 0;
+    background-color: #6255a5;
+    height: 50px;
+    width: 230px;
+    border: 1px solid #6255a5;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+
+/* ======================================================
+                    Pagination
+====================================================== */
+
+.pagination {
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+.pagination a.active {
+    background-color: #6255a5;
+    color: white;
+    border-radius: 50%;
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+/* ======================================================
+                    Note Details
+====================================================== */
+
+.note-details {
+    margin-top: 150px;
+}
+
+.note-details .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #6255a5;
+}
+
+.note-details .book-cover img {
+    width: 200px;
+    height: 254px;
+}
+
+.note-details .book-detail {
+    padding-right: 60px;
+}
+.note-details .book-detail h2 {
+    margin-bottom: 4px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #6255a5;
+}
+
+.note-details .book-detail h5 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+}
+
+.note-details .book-detail p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+.note-details .book-detail #btnSubmit {
+    padding: 13px 10px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    background-color: #6255a5;
+    width: 180px;
+    height: 46px;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.note-details .book-data #attribute {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333333;
+    text-align: left;
+}
+
+.note-details .book-data #value {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #6255a5;
+    text-align: right;
+}
+
+.note-details .book-data #book-rating {
+    height: 22px;
+    padding-bottom: 4px;
+}
+
+.note-details .book-data #red-text {
+    font-size: 14px;
+    line-height: 42px;
+    font-weight: 400;
+    color: red;
+}
+
+.note-details .book-data table {
+    width: 440px;
+}
+
+.note-details .left-bottom iframe {
+    width: 454px;
+    height: 392px;
+}
+
+.note-details .review {
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    padding: 24px;
+}
+
+.note-details #review {
+    padding: 0 24px;
+}
+
+.note-details #review h6 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 2px;
+}
+
+.note-details #review p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 4px;
+}
+
+.note-details #review #book-rating {
+    height: 18px;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+/* ======================================================
+                    Members            
+====================================================== */
+
+#members-table {
+    margin-top: 150px;
+}
+
+
+
+
+
+/* ======================================================
+                    Member Details                    
+====================================================== */
+
+.member-details {
+    margin: 150px 0 10px 0;
+    padding: 0;
+}
+
+.member-details .heading {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.member-details #top {
+    padding: 0;
+}
+
+.member-details .member-data #attribute {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #333333;
+    text-align: left;
+    width: 150px;
+}
+
+.member-details .member-data #value {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #6255a5;
+}
+
+
+
+
+
+
+/* ======================================================
+                    Spam Report
+====================================================== */
+
+#spam-reports {
+    margin-top: 140px;
+}
+
+
+
+
+
+
+/* ======================================================
+                    Notes Under Review
+====================================================== */
+
+#Notes-under-review {
+    margin-top: 140px;
+}
+
+.dashboard-table #approve-btn {
+    background-color: #28a745;
+    height: 38px;
+    width: 100px;
+    border: 1px solid #28a745;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.dashboard-table #reject-btn {
+    background-color: #ff3636;
+    height: 38px;
+    width: 100px;
+    border: 1px solid #ff3636;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.dashboard-table #inReview-btn {
+    background-color: #cccccc;
+    height: 38px;
+    width: 100px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+/* ======================================================
+                    Publish Notes
+====================================================== */
+
+#published-notes {
+    margin-top: 140px;
+}
+
+.dashboard-table .search-seller {
+    padding: 0;
+}
+
+.dashboard-table #search {
+    padding: 32px 0 0 14px;
+}
+
+.dashboard-table .search-seller #seller1 {
+    width: 20%;
+}
+
+.dashboard-table .search-seller [id="seller1"] {
+    background: url("../img/arrow-down.png") 90% no-repeat #fff;
+    appearance: none;
+}
+
+
+
+
+
+
+
+/* ======================================================
+                    Downloaded Notes
+====================================================== */
+
+#downloaded-notes {
+    margin-top: 140px;
+}
+
+.dashboard-table .downloaded-search {
+    padding: 0;
+}
+
+.dashboard-table .downloaded-search [id="note1"] {
+    background: url("../img/arrow-down.png") 90% no-repeat #fff;
+    appearance: none;
+}
+
+.dashboard-table .downloaded-search [id="seller1"] {
+    background: url("../img/arrow-down.png") 90% no-repeat #fff;
+    appearance: none;
+}
+
+.dashboard-table .downloaded-search [id="buyer1"] {
+    background: url("../img/arrow-down.png") 90% no-repeat #fff;
+    appearance: none;
+}
+
+
+
+
+
+
+/* ======================================================
+                    Rejected Notes
+====================================================== */
+
+#rejected-notes {
+    margin-top: 140px;
+}
+
+.dashboard-table .search-rejected {
+    padding: 0;
+}
+
+.dashboard-table .search-rejected #seller1 {
+    width: 20%;
+}
+
+.dashboard-table .search-rejected [id="seller1"] {
+    background: url("../img/arrow-down.png") 90% no-repeat #fff;
+    appearance: none;
+}
+
+
+
+
+
+
+
+/* ======================================================
+                    
+====================================================== */
+
