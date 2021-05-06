@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!-- Title -->
+    <title>Add Type</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+   
+    <!-- Navbar -->
+    <section class="nav-bar">   
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="dashboard.html">
+                <img src="../img/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Notes</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="notes-under-review.html">Notes Under Review</a>
+                            <a class="dropdown-item" href="published-notes.html">Published Notes</a>
+                            <a class="dropdown-item" href="downloaded-notes.html">Downloaded Notes</a>
+                            <a class="dropdown-item" href="rejected-notes.html">Rejected Notes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="member-details.html">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spam-reports.html">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link navbar-user-photo" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../img/reviewer-1.png"></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="user-profile.html">User Profile</a>
+                            <a class="dropdown-item" href="change-password.html">Change Password</a>
+                            <a class="dropdown-item" href="login.html" id="logout"><b>LOGOUT</b></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><button type="button" class="btn btn-primary btn-login">Logout</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="profile">
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h1 class="title">Add Type</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <label for="type1">Type <span>*</span></label>
+                            <input type="text" class="form-control" id="type1" placeholder="Enter category name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label for="typeDescription1">Description <span>*</span></label>
+                        <textarea class="form-control" id="typeDescription1" placeholder="Enter your description..."></textarea>
+                    </div>
+                </div>
+            </div>
+                <div class="form-group">
+                    <a href="#" id="btnSubmit" class="btn">SUBMIT</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- End Profile Details -->
+
+    <!-- Footer -->
+    <hr>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 footer-content">
+                    <p>Version : 1.1.24</p>
+                </div>
+                <div class="col-md-6 col-sm-6 text-right">
+                    <p>Copyright © <a href="https://www.tatvasoft.com/">TatvaSoft</a> All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JQuery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="../js/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+</body>
+
+</html>
